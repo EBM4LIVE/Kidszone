@@ -500,3 +500,48 @@ hr{
 .footer-end{
     font-size: 20px;
 }
+
+
+
+
+/*---------About HTML------*/
+
+.about-sub ul {
+    list-style-type: style none;
+    list-style: none;
+    display: block;
+    padding: 0;
+    
+    
+}
+.about-sub ul li{
+
+}
+.about-sub ul li::before{
+
+        content: "";
+        display: inline-block;
+        width: 200px;
+        height: 6px;
+        background-color: rgb(5, 2, 32);
+        margin-right: 5px;
+      
+}
+.about-header{
+    background-image: url(/images/background2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+/*-----------Contact HTML--------*/
+.contact-header{
+    background-image: url(/images/background3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#map {
+    height: 400px;
+    width: 100%;
+  }

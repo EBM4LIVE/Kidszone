@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> KIDSZONE</title>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale =1.0"/> 
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- SCRIPT-->
+</style>
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+<script>
+  function initMap() {
+    // Coordinates for the map center
+    var mapCenter = { lat: 37.7749, lng: -122.4194 };
+    
+    // Create a new map object
+    var map = new google.maps.Map(document.getElementById("map"), {
+      center: mapCenter,
+      zoom: 12
+    });
+    
+    // Add a marker to the map
+    var marker = new google.maps.Marker({
+      position: mapCenter,
+      map: map,
+      title: "San Francisco"
+    });
+  }
+</script>
+
+  <!-- Header -->
+  <header>
+    <section class="header  contact-header">
+      
+      <div class="titlebar"> 
+        
+      <nav>
+        
+        <div class="school-logo" id ="school-logo">
+            <a href="index.html" >
+            KIDSZONE DAYCARE
+           </a>
+          
+        </div>
+        
+        <div class="nav-links-first">
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+            <hr>
+            <li><a href="#aboutus">About Us</a></li>
+            
+            
+          
+          </ul>
+        </div>
+        <div class="nav-links-second">
+          <ul>
+            <li><a href="#services">Services</a></li>
+            <hr>
+            <li><a href="#contact">Contact us</a></li>
+            
+            
+          </ul>
+        </div>
+      </nav>
+      </div>
+
+      <div class="text-box">
+          <h1>KIDSZONE DAYCARE</h1>
+          <p> World best Daycare center </p>
+            <a href="#visit-btn" class="bevel-button link-sub">Learn More</a>
+      </div>
+
+    </section>
+  </header>
+
+ 
+  <!-- I am building a daycare website for a client what some small essay about how they train kids in the institution-->
+  <section class="health-safety contact-sub">
+    <div class="health-info">
+      <div id="map"></div>
+  </section>
+  
+  <!-- footer section-->
+  <footer class="footer">
+    <div class="top-footer">
+      <img src="/images/footer.png" alt="">
+    </div>
+    <div class="down-footer">
+      <div class="company">
+        <h1>Company</h1>
+        <ul>
+          <li>
+            <a href="">About Us</a>
+          </li>
+          <li>
+            <a href="">Contact Us</a> 
+          </li>
+          <li>
+            <a href="">Our Centers</a> 
+          </li>
+          <li>
+            <a href="">Careers</a> 
+          </li>
+        </ul>
+          
+      </div>
+      <div class="resources">
+        <h1>Resources</h1>
+        <ul>
+         <li>
+            <a href="">Programs Overview</a> 
+        </li>
+        <li>
+          <a href="">Child Care costs</a>
+        </li>
+        <li>
+          <a href="">How to Enroll </a>
+        </li>
+      </div>
+      <div class="updates">
+        <h1>Updates</h1>
+         <ul>
+          <li>
+            <a href="">Welcome Back to Learning</a>
+          </li>
+          <li>
+            <a href="">Covid-19 Response</a>
+          </li>
+         </ul>
+      </div>
+    </div>
+    <hr>
+    <div class="footer-end">
+      &copy; 2023 All rights reserved | Designed by EBM
+    </div>
+  </footer>
+
+  <script>
+    // Initialize the map when the page loads
+    window.onload = function () {
+      initMap();
+    };
+  </script>
+</body>
+</html>
