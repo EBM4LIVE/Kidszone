@@ -9,6 +9,7 @@
     width: 100%;
     background-image: linear-gradient(to top ,rgba(252, 139, 63, 0.253) ,rgba(0, 0, 0, 0)) ,url(/images/kids1.jpg);
     background-size: cover;
+    background-attachment: fixed;
     background-position: center;
     position: relative;
    
@@ -167,6 +168,10 @@ nav{
   top: 30px;
   text-decoration: none;
 }
+.link-sub:hover{
+
+
+}
 
 /*Main content*/
 .main-content{
@@ -178,7 +183,7 @@ nav{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 4rem;
+    gap: 1rem;
     flex-wrap: wrap;
     
   
@@ -224,12 +229,13 @@ nav{
  
     text-align:center;
     position: relative;
-    top: 0%;
+    top: -3%;
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    font-size: 20px;
 
 }
 .overlay:hover h1{
@@ -253,7 +259,7 @@ nav{
     flex-wrap: wrap;
     padding-top: 60px;
     padding-bottom: 60px;
-    gap: 5rem;
+    gap: 2rem;
     
     
    
@@ -264,7 +270,7 @@ nav{
     position: relative;
     cursor: pointer;
     flex-shrink: 1;
-    margin: 20px;
+    margin: 10px;
     
     
     
@@ -302,13 +308,14 @@ nav{
   
     text-align:center;
     position: relative;
-    top: -30%;
+    top: 20%;
     width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     font-family: Arial, Helvetica, sans-serif;
+    
+    
 }
 
 .info-tile img{
@@ -345,8 +352,8 @@ nav{
 
 .health-info img{
     
-    width: 600px;
-    height: 600px;
+    max-width: 600px;
+    height: 500px;
     border-radius: 5%;
     width: 100%;
     object-fit:cover;
@@ -378,9 +385,10 @@ nav{
 }
 
 .bevel-button:hover{
-    transition: 0.5s;
+    transition:all 0.5s;
     background-color: #c92f24;
     color:#fff ;
+    padding: 20px;
 }
 
 /*----Last-Info---*/
@@ -391,7 +399,7 @@ nav{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 1rem;
     padding-top: 100px;
     padding-bottom: 100px;
     position: relative;
@@ -419,8 +427,8 @@ nav{
     z-index: 2;
 }
 .image-box img{
-    max-width:800px;
-    max-height: 800px;
+    max-width:600px;
+    max-height: 600px;
     border-radius: 5%;
     height: 100%;
     width: 100%;
@@ -449,7 +457,7 @@ nav{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 1rem;
     padding-top: 10px;
     padding-bottom: 100px;
     position: relative;
@@ -470,7 +478,7 @@ nav{
     flex-direction: row;
     flex-wrap: wrap;
     flex-shrink: 1;
-    gap: 2rem;
+    gap: 1rem;
     justify-content:space-between;
     width: 100%;
     padding: 20px;
@@ -507,26 +515,50 @@ hr{
 /*---------About HTML------*/
 
 .about-sub ul {
-    list-style-type: style none;
-    list-style: none;
-    display: block;
+    
+    list-style:none;
+    
     padding: 0;
+    margin-left: 20px;
+    margin-right: 20px;
+
+    
     
     
 }
 .about-sub ul li{
-
+    position: relative;
+    padding-left: 20px;
+    background-color: aliceblue;
+    border-radius: 3%;
+    margin-bottom: 30px;
+    cursor: pointer;
 }
 .about-sub ul li::before{
 
-        content: "";
-        display: inline-block;
-        width: 200px;
-        height: 6px;
+        content: " ";    
+        width: 6px;
+        height: 80%;
         background-color: rgb(5, 2, 32);
         margin-right: 5px;
+        position: absolute;
+        left: 0;
+        top: 20px;
+        display: inline-block;
       
 }
+
+
+.about-sub ul li:hover{
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    
+    
+}
+.about-sub ul li:hover{
+    padding: 30px;
+    transition: 0.5s;
+}
+
 .about-header{
     background-image: url(/images/background2.jpg);
     background-position: center;
@@ -539,9 +571,319 @@ hr{
     background-image: url(/images/background3.jpg);
     background-position: center;
     background-size: cover;
+
 }
 
-#map {
-    height: 400px;
-    width: 100%;
-  }
+.contact-sub{
+    display: block;
+    position: relative;
+    
+}
+.map{
+    display: flex;
+    justify-content: center;
+    width:100% ;
+    
+    
+}
+.map iframe{
+    border-radius: 5%;
+    width:70vw ;
+    
+}
+.map iframe:hover{
+    transform: scale(1.1) ;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+
+}
+.container-pad{
+    display: flex;
+    justify-content: center;
+    column-gap: 15rem;
+    flex-wrap: wrap;
+
+}
+.pad{
+    
+    width: 400px;
+    height: 300px;
+    background-color: rgb(255, 236, 249);
+    border: solid  rgb(252, 156, 221) 3px;
+    margin-top: 50px;
+    border-radius: 5%;
+    position: relative;
+}
+.pad:hover{
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+.fa-location-dot{
+    position: absolute;
+    top: 15px;
+    cursor: pointer;
+    left: -30px;
+    color: rgb(255, 75, 105);
+}
+.location{
+    position: absolute;
+    bottom: 200px;
+    left: 70px;
+    cursor: pointer;
+}
+.location h1{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:#252525;
+}
+
+.pad:hover .fa-location-crosshairs {
+    color: #be3232;
+}
+.pad:hover .fa-address-book{
+    color: #be3232;
+}
+.second-location{
+    bottom: 120px;
+}
+.fa-location-crosshairs{
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    color: #252525;
+}
+.location h1:hover {
+    color: rgb(221, 52, 52);
+
+}
+.fa-address-book{
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    color: #252525;
+}
+.phone{
+    position: absolute;
+    bottom: 200px;
+    left: 100px;
+    cursor: pointer;
+}
+.second-phone{
+    bottom: 120px;
+}
+.fa-phone{
+    position: absolute;
+    top: 15px;
+    cursor: pointer;
+    left: -35px;
+    color: rgb(58, 21, 27);
+}
+.phone h1{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:#252525;
+    
+}
+
+/* --------#####Serivices.HTML#####---------*/
+
+
+.Services{
+    background-image: url(/images/Hero.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+    min-height: 60vh;
+}
+.sub-text{
+    top: 200px;
+    position: absolute;
+}
+/*---Facilities---*/
+.facilities .head{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    background-color: #f06c2f;
+}
+.facilities .head h1{
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ font-size: 40PX;
+ color: #1a1a1a;
+}
+.sub-facilities{
+    background-image: url(/images/icons-gray-bg.svg);
+}
+.sub-facilities .image {
+
+    display: flex;
+    justify-content: center;
+}
+.sub-facilities .image img{
+    height: 550px;
+    width: 800px;
+    width: 80%;
+    margin-top: 40px;
+    border-radius: 5%;
+    margin-bottom: 40px;
+    object-fit: cover;
+   
+}
+.container-image{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+.edit-image img{
+   width: 500px;
+   height: 700px;
+   object-fit: cover;
+   border-radius: 5%;
+}
+
+
+/*Health Section*/
+.health-section{
+    background-image: url(/images/icons-gray-bg.svg);
+   
+}
+.health-section .head{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    background-color: #f06c2f;
+    margin-top: 60px;
+
+}
+.health-section .head h1{
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ font-size: 40PX;
+ color: #1a1a1a;
+}
+.health-edit{
+    position: relative;
+    
+    
+  
+}
+.health-section h3{
+    background-color: #fa9262;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px;
+    color: #141313;
+    box-shadow: 0px 20px 10px rgba(0, 0, 0, 0.2);
+
+}
+.health-edit ol li{
+    background-color: #e9e2fd;
+    list-style: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    padding: 30px;
+    border: solid #4134fd 2px;
+    position: relative;
+    left: 15%;
+    width: 60%;
+    
+ 
+
+    
+}
+.health-edit ol li:hover{
+    box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.2);
+    color: #151e36;
+    transform: scale(1.01);
+}
+
+
+/*How to Enroll*/
+.enroll{
+    background-image: url(/images/icons-gray-bg.svg);
+}
+.enroll .head{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    background-color: #f06c2f;
+    margin-top: 60px;
+    
+
+}
+.enroll .head h1{
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ font-size: 40PX;
+ color: #1a1a1a;
+
+}
+.enroll-container ol li{
+    background-color: #fad0d0;
+    border: solid #fd3470 2px;
+    margin-bottom: 30px;
+}
+
+.enroll-container h2{
+    background-color: #fa9262;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px;
+    color: #141313;
+   
+   
+}
+.enroll-container p{
+    background-color: #e9e2fd;
+    padding-top: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    font-weight:800;
+
+}
+
+/*Goals*/
+.goal-main .head h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 40PX;
+    color: #1a1a1a;
+   
+   }
+   .goal-main .head{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    background-color: #f06c2f;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    
+
+}
+.goals{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.goals-edit{
+    width: 500px;
+   
+}
+
+
+/*---CURRICULUM----*/
+.curriculum-main .head h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 40PX;
+    color: #1a1a1a;
+   
+   }
+   .curriculum-main .head{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    background-color: #f06c2f;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    
+
+}
